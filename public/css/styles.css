@@ -1,0 +1,364 @@
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box; 
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  background-color: #ebebeb; /* Borde gris para el main */
+
+}
+.titulares {
+  font-size: 24px;
+}
+.precios {
+  font-size: 18px;
+}
+.descuentos{
+  font-size: 16px;
+}
+.descripciones{
+  font-size: 16px;
+}
+header{
+  background-color: #EAC926;
+  padding: 20px;
+}
+
+.busqueda{
+  flex: 1;
+  width: 50%; /* El logo ocupará el 50% del ancho de su contenedor */
+  align-items: center;
+  display: flex;
+  max-width: 350px;
+  text-align: right;
+}
+.logo{
+  margin-right: 25px;
+  width: 50%; /* El logo ocupará el 50% del ancho de su contenedor */
+  max-width: 200px; /* Establecemos un ancho máximo para el logo */
+}
+.titulo{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  max-width: 350px;
+  text-align: right;
+}
+.barra{
+  /* border: dotted 2px red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.centrar-hamburguesa {
+  background-color: blue; /* Color de fondo azul */
+  color: #ffffff;
+  display: block;
+  max-width: 50px;
+  padding: 15px 0;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  margin:auto;
+}
+.barra ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.barra li{
+  margin: 5px;
+}
+.barra ul li a{
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 17px;
+}
+
+.centrar-tarjeta{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  background-color: white;
+}
+.centrar-tarjeta i{
+  color: blue;
+}
+.centrar{
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+main{
+  background-color: #ebebeb;
+  padding: 20px 
+}
+.centrar-regalo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+.centrar-regalo i{
+  color: blue;
+}
+.centrar-escudo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+.centrar-escudo{
+  color: blue;
+}
+footer{
+  background-color: white;
+}
+main {
+  width: 90%; /* Ancho del 90% de la pantalla */
+  margin: 0 auto; /* Centra el main horizontalmente */
+}
+.caja-interna {
+  background-color: #ffffff; /* Color de fondo blanco */
+  border: 1px solid #ebebeb; /* Borde de 1 píxel, línea sólida y color #ebebeb */
+  padding: 15px; /* Espacio de 15 píxeles en cada lado */
+  border-radius: 5px; /* Bordes redondeados */
+  align-items: center; /* Centrar verticalmente los elementos internos */
+  position: relative;
+}
+.caja-interna >.fa-solid{
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b539;
+  background-color: #fff;
+  border-radius: 50%;
+  position:absolute;
+  right: 20px;
+  top: -15px;
+  color: green;
+  display: flex;
+  flex-direction: column;
+
+}
+.precios-descuentos{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0px
+}
+.descripciones{
+  display: flex;
+  align-items: center;
+ justify-content: flex-start;
+  margin-left: 1%;
+}
+.precios{
+  width: 30%;
+}
+.descuentos{
+  width: 70%;
+  margin-left: 10px;
+}
+.articulo{
+  background-color: #ffffff; /* Color de fondo blanco */
+  border: 1px solid #ebebeb; /* Borde de 1 píxel, línea sólida y color #ebebeb */
+  padding: 15px; /* Espacio de 15 píxeles en cada lado  la cajita 2*/
+  border-radius: 5px; /* Bordes redondeados */
+  align-items: center; /* Centrar verticalmente los elementos internos */
+  width: 80%;
+  margin: 15px;
+  box-shadow: 0px 0px 10px 2px rgba(100, 100, 100, 0.35);
+  flex-wrap: wrap;
+}
+.contenedor-padre{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.caja-interna .descuentos{
+  color: green;
+}
+.banner{
+  background-image: url("../img/img-home-banner.jpg"); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-position: center; /* Centra la imagen de fondo horizontalmente y verticalmente */
+  width: 100% ; /* Ancho del banner, ocupará el 100% del espacio horizontal disponible */
+  height: 150px; /* Altura del banner, ajusta según tus necesidades */
+}
+.header-top{
+  /* border: dotted 2px red; */
+  display:flex;
+  justify-content: space-between;
+
+
+}
+
+@media (max-width: 360px){
+  /*MOBIL 
+  ocultar el site y el login navbar.
+  descripción del artículo no se visualizará.*/
+  .barra{
+    display: none;
+  }
+  .articulo {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 100%
+  }
+  .articulo .descripciones{
+    display: none;
+  }
+  .contenedor-padre{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .articulo{
+    width: 300px;
+  }
+  .banner{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .titulo{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    max-width: 350px;
+    text-align: right;
+  }
+
+}
+@media (max-width: 361px) and (min-width:769){
+  /* TABLET 
+  mostrar el site y login navbar, pero ocultar la imagen
+  del menú hamburguesa.
+  Agregar box-shadow.*/
+  .nav,
+  .login{
+    display: block;
+  }
+ .centrar-hamburguesa{
+    display: none;
+  }
+  .articulo {
+    width: 50%; /* Dos artículos por fila en tablet */
+  }
+  .articulo .descripciones{
+    display: block;
+  }
+  .contenedor-padre{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .articulo{
+    width: 300px;
+  }
+}
+
+@media (min-width: 769px) {
+  /* DESKTOP
+  mostrar el site y login navbar, pero ocultar la imagen
+  del menú hamburguesa. 
+  Agregar box-shadow.*/
+  .login,
+  .nav{
+    display: block;  
+  }
+   .centrar-hamburguesa{
+    display: none;
+  }
+    .articulo .descripciones {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+  .articulo {
+    width: 25%; /* Cuatro artículos por fila en tablet */
+  }
+ .articulo .descripciones{
+    display: block;
+  }
+  .contenedor-padre{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .articulo{
+    width: 300px;
+  }
+
+}
+.formulario{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 500px;
+  background-color: rgb(158 158 158 / 23%);
+  justify-content: center;
+  padding: 20px;
+}
+.main-in{
+  display: flex;
+  justify-content: center;
+}
+.formulario input{
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+.boton{
+  display: flex;
+  background-color: blue;
+  align-items: center;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  place-content: space-around;
+  inline-size: -webkit-fill-available;
+  height: 40px;
+}
+.intereses{
+  display: flex;
+  flex-direction: column;
+}
+.ingresa{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+  background-color: #ebebeb;
+  margin-bottom: 15px;
+  justify-content: center;
+  width: 75%
+}
+.sep{
+  margin-bottom: 25px;
+  width: 100%;
+  height: 40px;
+}
+.prueba{
+  display: flex;
+}
+.prueba input{
+  align-items: center;
+  margin-block: auto;
+    min-inline-size: -webkit-fill-available;
+}
+.formulario input{
+  min-inline-size: -webkit-fill-available;
+  margin-top: 10px; /* Margen de 10 píxeles en la parte superior */
+  margin-right: 0px; /* Margen de 20 píxeles en la parte derecha */
+  margin-bottom: 15px; /* Margen de 15 píxeles en la parte inferior */
+  margin-left: 0px;
+}
+.modif-re{
+  font-weight: bold; /* Fuente en negrita */
+  font-size: 20px; /* Tamaño de fuente mayor */
+}
