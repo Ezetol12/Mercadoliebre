@@ -135,7 +135,7 @@ main {
   transition: box-shadow 0.3s ease;
 }
 
-.caja-interna >.fa-solid{
+.camion{
   font-size: 16px;
   padding: 5px;
   width: 30px;
@@ -151,9 +151,8 @@ main {
   flex-direction: column;
   display: inline-block;
   transition: transform 0.3s ease;
-
 }
-.fa-solid:hover{
+.camion:hover{
   transform: rotate(-90deg);
 }
 .caja-interna:hover{
@@ -307,7 +306,23 @@ main {
   .articulo{
     width: 300px;
   }
-
+  .footer{
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  }
+  .elemento{
+  width: 100%;
+  margin-top: 20px; /* Agrega un margen superior */
+  margin-bottom: 20px; /* Agrega un margen inferior */
+  }
+  .Yoko{
+    display: flex;
+    align-items: flex-start;
+  }
 }
 .formulario{
   display: flex;
@@ -338,9 +353,10 @@ main {
   place-content: space-around;
   inline-size: -webkit-fill-available;
   height: 40px;
+  transition: background-color 0.3s ease;
 }
 .boton:hover{
-  
+  background-color: #0022AA;
 }
 .intereses{
   display: flex;

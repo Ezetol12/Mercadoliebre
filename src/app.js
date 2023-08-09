@@ -15,3 +15,7 @@ app.get('/registro',(req,res)=>{ //aca va solo el nombre
 app.get("/login", (req, res) => {
   res.sendFile(path.join(__dirname, "./views/login.html")); //aca la ruta entera
 });
+
+// // app.listen(3000, () => {
+// //   console.log("esta funcionando");
+// // });
